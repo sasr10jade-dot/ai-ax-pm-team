@@ -468,7 +468,6 @@ export default function App() {
           <p className="text-xs font-extrabold tracking-[0.18em] text-[#64748B]">THANK YOU</p>
           <h2 className="mt-3 text-[clamp(28px,5vw,44px)] font-black">감사합니다 — Q&amp;A</h2>
           <p className="mt-3 text-[17px] font-bold text-[#2F6FDB]">AI로 빠르게 만들고, PM이 끝까지 책임집니다.</p>
-          <p className="mx-auto mt-4 max-w-[620px] text-sm leading-6 text-slate-500">이 페이지는 팀빌딩 발표 자료(AI_AX_PM_팀빌딩_전략개발1팀_261127)를 팀원용으로 풀어 정리한 것입니다.<br />전략개발1팀 · 2026.11.27</p>
         </div>
       </footer>
 
