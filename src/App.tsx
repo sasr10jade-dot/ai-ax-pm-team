@@ -134,11 +134,11 @@ export default function App() {
             <nav aria-label="섹션 이동" className="hidden lg:flex items-center gap-5 text-[13px] font-bold text-[#64748B]">
               {nav.map((n) => <button key={n.id} onClick={() => go(n.id)} className="nav-link hover:text-[#1E293B]">{n.label}</button>)}
             </nav>
-            <a href="/ai-guide/methodology.html" className="inline-flex shrink-0 items-center gap-1.5 pill bg-[#2F6FDB] px-3.5 py-2 text-[12px] sm:text-[13px] font-extrabold text-white hover:bg-[#2459B8]"><BookOpen size={14} />Jade AI 개발방법론<ArrowUpRight size={14} /></a>
+            <a href={`${import.meta.env.BASE_URL}ai-guide/methodology.html`} className="inline-flex shrink-0 items-center gap-1.5 pill bg-[#2F6FDB] px-3.5 py-2 text-[12px] sm:text-[13px] font-extrabold text-white hover:bg-[#2459B8]"><BookOpen size={14} />Jade AI 개발방법론<ArrowUpRight size={14} /></a>
           </div>
           <div className="flex gap-2 overflow-x-auto pb-3 lg:hidden" style={{ scrollbarWidth: 'none' }}>
             {nav.map((n) => <button key={n.id} onClick={() => go(n.id)} className="shrink-0 rounded-full border border-[#E8EDF3] bg-[#F7F8FA] px-3 py-1.5 text-[12px] font-bold">{n.label}</button>)}
-            <a href="/ai-guide/methodology.html" className="shrink-0 rounded-full bg-[#2F6FDB] px-3 py-1.5 text-[12px] font-bold text-white lg:hidden">Jade AI 개발방법론 ↗</a>
+            <a href={`${import.meta.env.BASE_URL}ai-guide/methodology.html`} className="shrink-0 rounded-full bg-[#2F6FDB] px-3 py-1.5 text-[12px] font-bold text-white lg:hidden">Jade AI 개발방법론 ↗</a>
           </div>
         </div>
       </header>
