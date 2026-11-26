@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Gowun+Dodum&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --ink:#1E293B;
+  --muted:#64748B;
+  --line:#E8EDF3;
+  --sky:#EAF3FF;
+  --sky-deep:#2F6FDB;
+  --mint:#E7F6F0;
+  --mint-deep:#1E8A68;
+  --lav:#F0EBFF;
+  --lav-deep:#6B4FD8;
+  --peach:#FFF1E8;
+  --peach-deep:#C65D2B;
+  --yellow:#FFF7D6;
+  --yellow-deep:#8A6D00;
+  --gray:#F7F8FA;
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#FFFFFF;
+    --surface:#FFFFFF;
+    --ink:#1E293B;
+    --muted:#64748B;
+    --line:#E8EDF3;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',system-ui,-apple-system,'Malgun Gothic',sans-serif;line-height:1.65;word-break:keep-all;overflow-wrap:anywhere}
+button{font-family:inherit}
+.card{border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(30,41,59,.06);transition:transform .22s ease, box-shadow .22s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(30,41,59,.10)}
+.pill{border-radius:999px}
+.section-label{font-size:12px;letter-spacing:.16em;font-weight:800}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.nav-link{white-space:nowrap}
+.nav-link:hover{color:#1E293B}
+@media print{
+  .no-print{display:none!important}
+  .card{box-shadow:none!important;break-inside:avoid}
+  body{font-size:11pt}
+}
