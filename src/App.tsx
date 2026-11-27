@@ -324,7 +324,6 @@ export default function App() {
             <h3 className="mt-2 text-3xl font-black">초콜릿 1.0</h3>
             <p className="mt-1 text-sm font-bold text-sky-100">구미에 맞게 꺼내 먹어요~</p>
             <p className="mt-4 text-[15px] leading-7">산출물 관리 방법을 체계화하고, 민간·공공 구축 결과물을 블록화해 제품 구성의 초석을 구축합니다.</p>
-            <p className="mt-auto pt-6 text-5xl font-black">80%</p>
           </div>
         </div>
 
