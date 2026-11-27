@@ -304,7 +304,7 @@ export default function App() {
 
       {/* MMA */}
       <section id="mma" className="mx-auto max-w-[1160px] px-4 sm:px-6 py-12 sm:py-16">
-        <SectionHead no="05" kicker="CHOCOLATE 1.0 · MMA" title="산출물을 블록으로: 초콜릿 1.0과 MMA" sub="MMA = Modular Monolithic Architecture. 모놀리식 구조를 유지하되 코드베이스를 모듈화해 독립성을 강화합니다. 공통은 모듈로 쌓고, 서비스는 꺼내 씁니다." tone="#F0EBFF" />
+        <SectionHead no="05" kicker="CHOCOLATE 1.0 · MMA" title="산출물을 MMA 블록으로!" sub="MMA = Modular Monolithic Architecture. 모놀리식 구조를 유지하되 코드베이스를 모듈화해 독립성을 강화합니다. 공통은 모듈로 쌓고, 서비스는 꺼내 씁니다." tone="#F0EBFF" />
 
         <div className="mt-8 grid gap-4 lg:grid-cols-[1.4fr_.6fr]">
           <div className="grid gap-3 sm:grid-cols-2">
