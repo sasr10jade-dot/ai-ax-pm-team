@@ -177,7 +177,7 @@ export default function App() {
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           <article className="card p-6 !bg-[#EAF3FF]"><Users className="text-[#2F6FDB]" /><h3 className="mt-4 text-xl font-black">사람 — PM의 본질은 그대로</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">문제해결·소통·일정관리는 유지하되, AI 시대에는 <b className="text-slate-800">정의·확인·결정이 PM의 몫</b>입니다. 책임의 무게는 더 커집니다.</p></article>
           <article className="card p-6 !bg-[#E7F6F0]"><Compass className="text-[#1E8A68]" /><h3 className="mt-4 text-xl font-black">방법 — 같은 11단계</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">요구사항 분석부터 납품까지 <b className="text-slate-800">11단계를 같은 순서로 반복</b>하고, 모든 단계를 문서와 RTM으로 남깁니다.</p></article>
-          <article className="card p-6 !bg-[#F0EBFF]"><Layers className="text-[#6B4FD8]" /><h3 className="mt-4 text-xl font-black">구조 — MMA처럼 모듈로</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">초콜릿 1.0의 <b className="text-slate-800">Modular Monolithic Architecture</b>처럼 공통 표준을 쌓고, 프로젝트를 병행하며 단계적으로 고도화합니다.</p></article>
+          <article className="card p-6 !bg-[#F0EBFF]"><Layers className="text-[#6B4FD8]" /><h3 className="mt-4 text-xl font-black">구조 — MMA처럼 모듈로</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">초콜릿 프로젝트의 <b className="text-slate-800">Modular Monolithic Architecture</b>처럼 공통 표준을 쌓고, 프로젝트를 병행하며 단계적으로 고도화합니다.</p></article>
         </div>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           <div className="rounded-[18px] border border-[#E8EDF3] bg-[#F7F8FA] p-6"><p className="text-xs font-extrabold tracking-widest text-slate-400">PM의 3대 역량 · 변하지 않는 것</p><p className="mt-3 text-lg font-bold leading-8">문제 해결<br />커뮤니케이션<br />일정관리</p></div>
@@ -304,7 +304,7 @@ export default function App() {
 
       {/* MMA */}
       <section id="mma" className="mx-auto max-w-[1160px] px-4 sm:px-6 py-12 sm:py-16">
-        <SectionHead no="05" kicker="CHOCOLATE 1.0 · MMA" title="산출물을 MMA 블록으로!" sub="MMA = Modular Monolithic Architecture. 모놀리식 구조를 유지하되 코드베이스를 모듈화해 독립성을 강화합니다. 공통은 모듈로 쌓고, 서비스는 꺼내 씁니다." tone="#F0EBFF" />
+        <SectionHead no="05" kicker="CHOCOLATE PROJECT · MMA" title="산출물을 MMA 블록으로!" sub="MMA = Modular Monolithic Architecture. 모놀리식 구조를 유지하되 코드베이스를 모듈화해 독립성을 강화합니다. 공통은 모듈로 쌓고, 서비스는 꺼내 씁니다." tone="#F0EBFF" />
 
         <div className="mt-8 grid gap-4 lg:grid-cols-[1.4fr_.6fr]">
           <div className="grid gap-3 sm:grid-cols-2">
@@ -317,7 +317,7 @@ export default function App() {
           </div>
           <div className="rounded-[18px] bg-[#2F6FDB] p-6 text-white flex flex-col">
             <p className="text-xs font-extrabold tracking-widest text-sky-200">PRODUCT</p>
-            <h3 className="mt-2 text-3xl font-black">초콜릿 1.0</h3>
+            <h3 className="mt-2 text-3xl font-black">초콜릿 프로젝트</h3>
             <p className="mt-1 text-sm font-bold text-sky-100">구미에 맞게 꺼내 먹어요~</p>
             <p className="mt-4 text-[15px] leading-7">산출물 관리 방법을 체계화하고, 민간·공공 구축 결과물을 블록화해 제품 구성의 초석을 구축합니다.</p>
           </div>
