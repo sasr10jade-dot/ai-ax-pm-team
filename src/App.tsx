@@ -128,9 +128,7 @@ export default function App() {
         <div className="mx-auto max-w-[1160px] px-4 sm:px-6">
           <div className="flex h-[64px] items-center justify-between gap-4">
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex min-w-0 items-center gap-2.5 text-left">
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[#EAF3FF] text-[17px] font-black text-[#2F6FDB]">AX</span>
-              <span className="leading-tight"><span className="block text-[13px] font-black">전략개발1팀</span><span className="block text-[11px] font-bold text-[#64748B]">AI AX PM · 팀빌딩</span></span>
-            </button>
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[#EAF3FF] text-[17px] font-black text-[#2F6FDB]">AX</span>            </button>
             <nav aria-label="섹션 이동" className="hidden lg:flex items-center gap-5 text-[13px] font-bold text-[#64748B]">
               {nav.map((n) => <button key={n.id} onClick={() => go(n.id)} className="nav-link hover:text-[#1E293B]">{n.label}</button>)}
             </nav>
