@@ -42,7 +42,7 @@ const filters = [
 
 // 팀 구성 — 덱 7·8번 슬라이드
 const roles = [
-  ['전략개발 1팀 Head', 'MPM Head · 최종 책임', '#EAF3FF', '#2F6FDB', 'Project 로드맵 한 판을 그리고 운영하는 책임자입니다. 문제 해결·커뮤니케이션·일정관리 역량으로 팀을 이끕니다.', '11단계 표준 방법론을 전 프로젝트에 적용하고 최종 책임(A)을 집니다.'],
+  ['전략개발 1팀 Head', '로드맵 · 최종 책임', '#EAF3FF', '#2F6FDB', 'Project 로드맵 한 판을 그리고 운영하는 책임자입니다. 문제 해결·커뮤니케이션·일정관리 역량으로 팀을 이끕니다.', '11단계 표준 방법론을 전 프로젝트에 적용하고 최종 책임(A)을 집니다.'],
   ['Development PM', '개발 · 기술 리딩', '#E7F6F0', '#1E8A68', '개발 전체의 문제를 예측하고 대응합니다. 개발 스펙 정의, 공통·DB 설계, 프레임워크 구성 등 기술 방향을 가이드합니다.', 'AI가 만든 설계·코드의 리뷰 기준을 세우고, MMA 구조로 개발 방법을 가이드합니다.'],
   ['Management PM', '인력 · 업체 연결', '#FFF1E8', '#C65D2B', '인력과 업체를 섭외하고 연결하는 전문가입니다. 인적 자원을 최적으로 활용하고 대·내외 고객 응대를 지원합니다.', '내·외부 인력에게 AI 사용 수칙과 문서 양식을 공유하고 역량 편차를 관리합니다.'],
   ['PMO', '이슈 · 문서 · 진척 관리', '#FFF7D6', '#8A6D00', '이슈 관리체제를 세우고 문서·템플릿을 관리합니다. 전사 Project 현황(WBS·이슈·진척)을 보고합니다.', '팀 표준 프롬프트·문서 양식을 관리하고 RTM과 변경 관리를 운영합니다.'],
@@ -72,12 +72,12 @@ const security = [
 ];
 
 const projects = [
-  ['지역 관광·모빌리티 호출', '관광택시 호출·순번배차·예약, 시티투어 예약, 주차장 정보, 결제 연동', '국내 클라우드'],
-  ['초소형 전기차 공유', '예약/반납, 이동경로 수집·시각화, 디지털키', '글로벌 클라우드'],
-  ['EV 충전 운영 (공공)', '충전 사업자 시스템 연계, EV 충전 앱 + 관리자 웹(CSMS)', '국내 클라우드'],
-  ['통합 MaaS (공공)', '통합 MaaS 앱·기사앱·관리자, 버스DRT/택시 호출 SDK', '글로벌 클라우드'],
-  ['자동차 사이버보안 대응', '사이버보안 시스템 클라이언트 연동, 사고신고 관리', '고객 전용 환경'],
-  ['V2X 인증서 관리 (공공)', 'PKI 인증서 발급·갱신·폐기', 'On-Premises'],
+  ['모빌리티', '관광택시 호출·순번배차·예약, 결제 연동', '국내 클라우드'],
+  ['초소형전기차 쉐어링', '예약/반납·이동경로 수집·디지털키', '글로벌 클라우드'],
+  ['CSMS 충전사업', 'CPOs Core 연계·EV 충전 앱·CSMS 웹', '국내 클라우드'],
+  ['DRT, 자율주행 관제', '통합 MaaS 앱·버스DRT/택시 호출 SDK', '글로벌 클라우드'],
+  ['자동차 사이버보안', 'CSTP Client 연동·사고신고 관리', '고객 전용 환경'],
+  ['V2X, PnC, KMS, PKI', 'PKI 인증서 발급·갱신·폐기', 'On-Premises'],
 ];
 
 const synth = [
@@ -167,6 +167,7 @@ export default function App() {
           <div className="rounded-2xl bg-[#E7F6F0] p-4"><b>02 방법</b><p className="mt-1 text-sm text-slate-600">AI는 초안, 사람은 검증·결정</p></div>
           <div className="rounded-2xl bg-[#F0EBFF] p-4"><b>03 구조</b><p className="mt-1 text-sm text-slate-600">공통은 모듈로, 서비스는 꺼내 쓰기</p></div>
         </div>
+        <div className="mt-3 rounded-2xl bg-[#FFF1E8] p-4"><b>04 실행</b> <span className="text-sm text-slate-600">· 역할 분담(RACI) · 로드맵 · 팀 약속을 오늘 함께 합의합니다</span></div>
       </section>
 
       <Divider />
@@ -202,7 +203,7 @@ export default function App() {
           ))}
         </div>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
-          <div className="card p-6"><p className="section-label text-[#64748B]">COLLABORATION</p><h3 className="mt-2 text-lg font-black">유관부서</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">사업본부 · 서비스 운영 조직 · 서비스 기획 조직 · 연구소 · 고객사</p></div>
+          <div className="card p-6"><p className="section-label text-[#64748B]">COLLABORATION</p><h3 className="mt-2 text-lg font-black">유관부서</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">모빌리티 사업본부 · 서비스운영그룹 · 서비스기획그룹 · 연구소 · 고객사</p></div>
           <div className="card p-6"><p className="section-label text-[#64748B]">COLLABORATION</p><h3 className="mt-2 text-lg font-black">외주 개발사 · 프리랜서 그룹</h3><p className="mt-2 text-[15px] leading-7 text-slate-600">프로젝트에 따라 연계하여 빠르고 정확하게 구축합니다.</p></div>
         </div>
         <div className="mt-4 rounded-[18px] bg-[#1E293B] p-6 text-white"><h3 className="text-xl font-black">숲보다 더 큰 사람들</h3><p className="mt-2 text-sm leading-6 text-slate-300">리더십·개발 이해·커뮤니케이션을 UP, 그리고 AI로 한 번 더 UP — 팀의 비전은 &lsquo;PM의 일&rsquo; 섹션에서 이어집니다.</p></div>
@@ -250,7 +251,7 @@ export default function App() {
 
           <div className="mt-4 grid gap-4 lg:grid-cols-2">
             <div className="card overflow-hidden"><div className="bg-[#1E293B] px-5 py-3 text-sm font-bold text-white">1단계 · 프롬프트 예시</div><div className="p-5 mono text-[13px] leading-6 text-slate-700 bg-[#F8FAFC]">“첨부한 과업지시서에서 사업 개요·기능·비기능 요구사항을 표로 뽑아줘.<br />항목마다 번호, 원문 쪽수, 중요도를 적어줘.”</div><p className="px-5 pb-5 pt-3 text-sm leading-6 text-slate-500">같은 지시를 반복해 쓸 수 있도록 프롬프트와 문서 양식을 팀 표준으로 만듭니다.</p></div>
-            <div className="card p-5 sm:p-6 bg-[#FFF1E8]"><p className="font-black">사람의 책임</p><div className="mt-4 space-y-3">{[['AI의 답은 ‘초안’', '근거(과업지시서 몇 쪽 등)를 함께 적게 하고, 담당자가 원문과 대조한다'], ['지시문을 팀 표준으로', '프롬프트와 문서 양식을 팀 표준으로 만든다'], ['검증 담당자 지정', '없는 요구사항을 지어내거나 빠뜨릴 수 있으므로 체크리스트로 확인한다']].map(([t, d]) => <div key={t} className="rounded-2xl bg-white p-3 shadow-sm"><b>{t}</b><p className="mt-1 text-sm leading-6 text-slate-600">{d}</p></div>)}</div></div>
+            <div className="card p-5 sm:p-6 bg-[#FFF1E8]"><p className="font-black">사람의 책임</p><div className="mt-4 space-y-3">{[['AI의 답은 ‘초안’', '근거(과업지시서 몇 쪽 등)를 함께 적게 하고, 담당자가 원문과 대조한다'], ['지시문을 팀 표준으로', '같은 지시를 반복해 쓸 수 있도록 프롬프트와 문서 양식을 팀 표준으로 만든다'], ['검증 담당자 지정', '없는 요구사항을 지어내거나 빠뜨릴 수 있으므로 체크리스트로 확인한다']].map(([t, d]) => <div key={t} className="rounded-2xl bg-white p-3 shadow-sm"><b>{t}</b><p className="mt-1 text-sm leading-6 text-slate-600">{d}</p></div>)}</div></div>
           </div>
         </div>
       </section>
@@ -285,7 +286,7 @@ export default function App() {
           <table className="w-full min-w-[640px] text-center text-[14px]">
             <thead><tr className="border-b border-slate-300 text-slate-600">
               <th className="p-3 text-left">구간</th>
-              {[['MPM Head', 'PM'], ['기획·분석', 'Planning/Design PL'], ['Development PM', '개발'], ['PMO', 'QA·검증'], ['고객', '']].map(([a, b]) => <th key={a} className="p-3"><b className="block text-slate-800">{a}</b><span className="text-xs font-normal text-slate-500">{b}</span></th>)}
+              {[['전략개발1팀 Head', 'PM'], ['기획·분석', 'Planning/Design PL'], ['Development PM', '개발'], ['PMO', 'QA·검증'], ['고객', '']].map(([a, b]) => <th key={a} className="p-3"><b className="block text-slate-800">{a}</b><span className="text-xs font-normal text-slate-500">{b}</span></th>)}
             </tr></thead>
             <tbody>
               {raci.map((r) => (
@@ -326,7 +327,7 @@ export default function App() {
         {/* MMA diagram */}
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.3fr_.7fr]">
           <div className="card p-5 sm:p-6">
-            <p className="text-sm font-black text-slate-500">MMA 구성도</p>
+            <p className="text-lg font-black">MMA로 시작해 MSA로 간다</p><p className="mt-1 text-sm text-slate-500">모놀리식의 단순함은 유지하고, 코드는 모듈로 독립시킵니다.</p>
             <div className="mt-4 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
               <div className="grid place-items-center rounded-xl border border-slate-300 px-4 py-6 text-sm font-bold">Client</div>
               <ArrowRight className="mx-auto shrink-0 rotate-90 text-slate-400 sm:rotate-0" size={18} />
@@ -373,12 +374,12 @@ export default function App() {
         <h3 className="mt-12 text-2xl font-black">관리자 IA도 블록 조립</h3>
         <p className="mt-2 text-sm text-slate-500">공통(필수) 위에 서비스 영역을 선택해 얹습니다.</p>
         <div className="mt-4 space-y-3">
-          <div className="grid items-center gap-3 md:grid-cols-[170px_1fr]"><div><b className="text-[#2F6FDB]">공통 (필수)</b><p className="text-xs text-slate-500">As-Is Admin Common</p></div><div className="flex flex-wrap gap-2">{['로그인', '관제·대시보드', '회원 공통', '관리자 권한 관리', '게시판', '메뉴·권한 관리'].map((x) => <span key={x} className="rounded-xl bg-[#2F6FDB] px-3.5 py-2 text-[13px] font-bold text-white">{x}</span>)}</div></div>
+          <div className="grid items-center gap-3 md:grid-cols-[170px_1fr]"><div><b className="text-[#2F6FDB]">공통 (필수)</b><p className="text-xs text-slate-500">As-Is Admin Common</p></div><div className="flex flex-wrap gap-2">{['로그인', '관제·대시보드', '회원 공통', '관리자 권한 관리', '게시판', '메뉴·권한 관리', '로그 감시 (개인정보 열람이력 관리)'].map((x) => <span key={x} className="rounded-xl bg-[#2F6FDB] px-3.5 py-2 text-[13px] font-bold text-white">{x}</span>)}</div></div>
           <hr className="border-[#E8EDF3]" />
           <div className="grid items-center gap-3 md:grid-cols-[170px_1fr]"><div><b className="text-[#2F6FDB]">공통 고도화</b><p className="text-xs text-slate-500">To-Be · V2X 사업 개발 이후</p></div><div className="flex flex-wrap gap-2">{['공통 코드 관리', '메뉴 생성 (추가·수정·삭제)'].map((x) => <span key={x} className="rounded-xl border-2 border-dashed border-[#2F6FDB] bg-[#EAF3FF] px-3.5 py-2 text-[13px] font-bold">{x}</span>)}</div></div>
           <hr className="border-[#E8EDF3]" />
           <div className="grid gap-3 md:grid-cols-[170px_1fr]"><div><b className="text-[#2F6FDB]">서비스 영역 (선택)</b><p className="text-xs text-slate-500">Custom Service Area</p></div>
-            <div className="grid gap-3 sm:grid-cols-3">{[['영역 1 · 차량·주차장 서비스', ['차량 관리', '주차장 관리']], ['영역 2 · EV 충전 서비스', ['충전기 관리·원격 제어', '충전소 관리·운영 내역', '프로모션 관리', '충전 현황 대시보드']], ['영역 3 · V2X 인증서 서비스', ['대시보드', '단말기 등록·현황 조회', '인증서 발급 현황 (등록·인가·연간)']]].map(([t, items]) => <div key={t as string} className="rounded-2xl bg-[#F7F8FA] p-4"><b className="text-[#2F6FDB]">{t as string}</b><ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-slate-600">{(items as string[]).map((i) => <li key={i}>{i}</li>)}</ul></div>)}</div></div>
+            <div className="grid gap-3 sm:grid-cols-3">{[['영역 1 · 관제 서비스', ['자율주행 관제', '차량 관리', '주차장 관리']], ['영역 2 · EV CSMS', ['충전기 관리·원격 제어', '충전소 관리·운영 내역', '프로모션 관리', '충전 현황 대시보드']], ['영역 3 · V2X, PnC, KMS, PKI', ['대시보드', '단말기 등록·현황 조회', '인증서 발급 현황 (등록·인가·연간)']]].map(([t, items]) => <div key={t as string} className="rounded-2xl bg-[#F7F8FA] p-4"><b className="text-[#2F6FDB]">{t as string}</b><ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-slate-600">{(items as string[]).map((i) => <li key={i}>{i}</li>)}</ul></div>)}</div></div>
         </div>
       </section>
 
