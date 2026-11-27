@@ -146,7 +146,7 @@ export default function App() {
       {/* Hero */}
       <section className="mx-auto max-w-[1160px] px-4 sm:px-6 pt-10 sm:pt-16 pb-10">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="pill bg-[#EAF3FF] px-3 py-1.5 text-[12px] font-extrabold text-[#2F6FDB]">전략개발1팀 팀빌딩 · 2026.11.27</span>
+          <span className="pill bg-[#EAF3FF] px-3 py-1.5 text-[12px] font-extrabold text-[#2F6FDB]">전략개발1팀 Jade.K</span>
           <span className="pill bg-[#F7F8FA] px-3 py-1.5 text-[12px] font-extrabold text-[#64748B]">전략개발1팀 · AI AX PM</span>
         </div>
         <div className="mt-6 grid gap-8 lg:grid-cols-[1.25fr_.75fr] lg:items-end">
